@@ -2,62 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NYCU FL Python Workshop</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name – Workshop</title>
+  <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" />
   <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-      margin: 0;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    h1 {
-      color: #0066cc;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: auto;
-    }
-
-    a.button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #0066cc;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background-color 0.2s ease;
-    }
-
-    a.button:hover {
-      background-color: #004c99;
-    }
-
-    footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
+    body { max-width: 900px; margin: auto; padding: 2rem; }
+    nav { margin-bottom: 2rem; }
+    nav a { margin-right: 1rem; text-decoration: none; color: #0366d6; }
+    nav a:hover { text-decoration: underline; }
+    header { text-align: center; margin-bottom: 3rem; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .card { padding: 1rem; border: 1px solid #e1e4e8; border-radius: 6px; }
+    .card h3 { margin-top: 0; }
+    footer { margin-top: 4rem; text-align: center; font-size: 0.85rem; color: #555; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>NYCU FL Python Workshop</h1>
-    <p>Welcome! This is an introductory Python coding workshop for NYCU Foreign Languages freshmen.</p>
-    <p>🧠 Learn programming basics<br>
-       💻 Write Python code<br>
-       🚀 Build your foundation in tech</p>
+  <nav>
+    <a href="/">Home</a>
+    <a href="workshop.html">Workshop</a>
+    <a href="materials/">Materials</a>
+    <a href="https://github.com/YOUR-USERNAME/REPO-NAME">GitHub Repo</a>
+  </nav>
 
-    <a class="button" href="https://github.com/Chenct-jonathan/nycufl_pyws/" target="_blank">View the Workshop Repo</a>
+  <header>
+    <h1>Your Name</h1>
+    <p>Python Workshop • NYCU FL Freshmen</p>
+  </header>
 
-    <footer>
-      <p>Hosted with ❤️ on GitHub Pages</p>
-    </footer>
-  </div>
+  <section class="grid">
+    <div class="card">
+      <h3>About This Workshop</h3>
+      <p>Learn Python basics through hands‑on exercises and real‑world examples.</p>
+    </div>
+    <div class="card">
+      <h3>Get Started</h3>
+      <p>Visit the <a href="workshop.html">workshop page</a> to follow along with code demos.</p>
+    </div>
+    <div class="card">
+      <h3>Materials</h3>
+      <p>Slides, code snippets, and resources are available in the <a href="materials/">Materials</a> folder.</p>
+    </div>
+    <div class="card">
+      <h3>About Me</h3>
+      <p>I'm a tutor &amp; developer passionate about teaching coding to FL students.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Hosted on GitHub Pages | © 2025 Your Name</p>
+  </footer>
 </body>
 </html>
